@@ -221,9 +221,8 @@ button::-moz-focus-inner {
 	width:100%;
 }
 .image-top p{
-	text-align: left;
-	padding: 3% 0;
-	font-size: 13px;
+	text-align: justify;
+	padding:2% 0;
 }
 @media screen and (max-width:800px){
 	#small-dialog,#small-dialog1,#small-dialog2,#small-dialog3,#small-dialog4,#small-dialog5 ,#small-dialog6,#small-dialog7,#small-dialog8,#small-dialog9{
