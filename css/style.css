@@ -7,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 body{
 	padding:0;
 	margin:0;
-	font-family: 'Roboto Slab','微软雅黑', serif;
+	font-family: 'Arial','微软雅黑', serif;
 }
 body a{
     transition:0.5s all;
@@ -79,9 +79,8 @@ ul.details li{
 	display:inline-block;
 }
 .header-banner{
-	background: url("../images/banner.jpg") no-repeat;
-	min-height: 860px;
-	background-size: cover;
+	background: url("../images/pexels-photo-62806.jpeg") no-repeat;
+	background-size: 100%;
 	-webkit-background-size: cover;
 	-moz-background-size: cover;
 	-o-background-size: cover;
@@ -94,19 +93,26 @@ ul.details li{
 	margin: 1em 0 0.3em 0;
 }
 .header-banner-info h1{
-	font-size:5em;
+	font-size:2em;
 	font-weight:300;
 	color:#FFFFFF;
+	margin-top: 10px;
 }
 .header-banner-info span{
 	font-weight:700;
 	color:#FFFFFF;
 }
-.header-banner-info p{
+.header-banner-info p:nth-child(3){
 	font-weight:300;
 	color:#FFFFFF;
 	font-size:1.5em;
-	margin: 1.2em 0 1.6em 0;
+	margin: 1.2em 0 1.2em 0;
+}
+.header-banner-info p:nth-child(4){
+	font-weight:300;
+	color:#FFFFFF;
+	font-size:1em;
+	margin-bottom: 1.2em;
 }
 ul.details li {
 	font-weight: 400;
@@ -124,8 +130,11 @@ ul.details {
 	padding-top: 8em;
 }
 .header-banner-info {
-	padding-top: 12em;
+	padding-bottom: 30px;
 	position:relative;
+}
+.header-banner-info .social-icons{
+	margin-top: 60px;
 }
 i.twitter{
 	width: 60px;
@@ -177,7 +186,7 @@ i.behance:hover{
 	display: block;
 	position: absolute;
 	right: 58.4%;
-	bottom: 23%;
+	bottom: 5%;
 }
 .header-banner-info span.line {
 	height: 2px;
@@ -186,7 +195,7 @@ i.behance:hover{
 	display: block;
 	position: absolute;
 	right: 31.6%;
-	bottom: 23%;
+	bottom: 5%;
 }
 .about-section{
 	background:#524664;
@@ -202,14 +211,32 @@ i.behance:hover{
 	text-transform:uppercase;
 	font-size:2.3em;
 }
+.about-section-grids .col-md-4{
+	padding: 0 30px;
+}
+.about-section-grids:after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    clear: both;
+}
+.about-section-grids .tel span{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: yellow;
+	float: left;
+}
 .about-section-grid-2.text-center img {
 	border-radius: 50%;
 	-webkit-border-radius: 50%;
 	-moz-border-radius: 50%;
 	-o-border-radius: 50%;
 	-ms-border-radius: 50%;
-	padding: 2.7em;
+	padding: 2.2em;
 	border: 5px solid #FFD670;
+	display: initial;
 }
 .about-section-head p{
 	color:#D0C6DB;
@@ -247,7 +274,9 @@ i.behance:hover{
 	word-spacing: 2px;
 }
 .about-section-grid-2{
-	margin-top:5em;
+	margin-top:2em;
+	float: none;
+	margin:0 auto;
 }
 .about-section-grid-3 h4{
 	color:#fff;
@@ -321,13 +350,13 @@ i.behance:hover{
 	position:relative;
 }
 .portfolio-section-head h3{
-	color:#FFFFFF;
+	color:#fff;
 	font-weight:700;
 	text-transform:uppercase;
 	font-size:2.3em;
 }
 .portfolio-section-head p{
-	color:#FFF0CA;
+	color:#fff;
 	font-weight:300;
 	font-size:1.2em;
 	margin-top: 1.35em;
@@ -335,19 +364,20 @@ i.behance:hover{
 }
 .portfolio-section-head label {
 	height: 3px;
-	width: 7%;
-	background: #FFF0CA;
+	width: 6%;
+	background: #eee;
 	display: block;
 	position: absolute;
 	right: 47%;
 	bottom: 52%;
 	margin: -10px 0;
+	opacity: 0.8;
 }
 .project-name{
-	border-bottom:1px solid #FFF1CE;
+	border-bottom:1px solid #eee;
 }
 .project-name span{
-	color: #FFF1CE;
+	color: #eee;
 	font-weight: 300;
 	font-size: 15px;
 	margin-bottom: 0.6em;
@@ -361,7 +391,7 @@ i.behance:hover{
 	padding: 0;
 }
 .project-name h3{
-	color:#fff;
+	color:#eee;
 	font-weight:700;
 	font-size:1.5em;
 	margin-bottom: 1em;
@@ -370,7 +400,7 @@ i.behance:hover{
 	margin: 0 0 14px 59px;
 }
 .project-description span{
-	color: #FFF1CE;
+	color: #eee;
 	font-weight: 300;
 	font-size: 15px;
 	margin: 1em 0;
@@ -378,27 +408,27 @@ i.behance:hover{
 	text-transform: uppercase;
 }
 .project-description ul li{
-	color:#fff;
+	color:#eee;
 }
 .project-description ul li a{
-	color:#fff;
+	color:#eee;
 	font-size:15px;
 	font-weight:300;
 	margin: 6px 0;
 	list-style-type: disc;
 }
 .project-description p{
-	color: #fff;
+	color: #eee;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 1.8em;
 	margin-bottom: 1.5em;
 }
 .project-description{
-	border-bottom:1px solid #FFF1CE;
+	border-bottom:1px solid #eee;
 }
 .address span{
-	color: #FFF1CE;
+	color: #eee;
 	font-weight: 300;
 	font-size: 15px;
 	margin: 1em 0;
@@ -406,16 +436,19 @@ i.behance:hover{
 	text-transform: uppercase;
 }
 .address{
-	border-bottom:1px solid #FFF1CE;
+	border-bottom:1px solid #eee;
 	margin: 15px 0 0 0;
 }
-.address a{
-	color:#fff;
+.address p{
+	color:#eee;
 	margin: 0 0 1.5em 3em;
-	display: block;
+}
+.address a{
+	color:#eee;
+	display: inline-block;
 }
 .tags span{
-	color: #FFF1CE;
+	color: #eee;
 	font-weight: 300;
 	font-size: 15px;
 	margin: 1em 0;
@@ -423,7 +456,7 @@ i.behance:hover{
 	text-transform: uppercase;
 }
 .tags p{
-	color:#fff;
+	color:#eee;
 	font-weight:300;
 	font-size:14px;
 }
@@ -484,7 +517,45 @@ ul.wmuSliderPagination {
 }
 .portfolio-section-top-row-right-grid {
 	padding-right: 0;
-	padding-left: 30px;
+	padding-left: 70px;
+	height: 390px;
+}
+.banner-box{
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	position: relative;
+}
+.banner-box .banner{
+    position: absolute;
+    left: 100%;
+    width: 100%;
+    height: 100%;
+}
+.banner-box .banner-1{
+	background-image: url(../images/apple.jpg);
+	background-repeat:no-repeat; 
+	background-size: 100%;
+	left: 0;
+}
+.banner-2{
+	background-image: url(../images/1haodian.jpg);
+	background-repeat:no-repeat; 
+	background-size: 100%;
+}
+.banner-3{
+	background-image: url(../images/yzjx.jpg);
+	background-repeat:no-repeat; 
+	background-size: 100%;
+}
+.banner-4{
+	background-image: url(../images/kibey.png);
+	background-repeat:no-repeat; 
+	background-size: 100%;
+}
+.address a:hover{
+	color:#615474;
 }
 /*	Strip
 /*-----------------------------------------------------------------------------------*/
@@ -1211,6 +1282,7 @@ i.in{
 		font-size: 15px;
 		line-height: 1.5em;
 		margin-bottom: 1em;
+		margin-top: 1em;
 	}
 }
  @media screen and (max-width:1280px){
@@ -1358,7 +1430,6 @@ i.in{
 	}
 	.about-section-grid-2 {
 		width: 50%;
-		float: left;
 		margin-top: 2em;
 	}
 	.col {

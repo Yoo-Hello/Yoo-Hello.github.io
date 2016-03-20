@@ -11,22 +11,19 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 	<title>欢迎来到我的主页！</title>
 </head>
 <body>
-	
-
-
-
 <link href="./css/bootstrap.css" rel='stylesheet' type='text/css' />
 <!-- Custom Theme files -->
 <link href="./css/style.css" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
-<script src="./js/jquery.min.js"></script>
+<script src="./js/jquery-1.12.1.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--webfont-->
 <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 <link href='http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900,200italic,300italic,400italic,600italic,700italic,900italic' rel='stylesheet' type='text/css'>
-    <script type="text/javascript" src="./js/move-top.js"></script>
+<script type="text/javascript" src="./js/move-top.js"></script>
 <script type="text/javascript" src="./js/easing.js"></script>
+<!-- 页面跳转 -->
 <script type="text/javascript">
 			jQuery(document).ready(function($) {
 				$(".scroll").click(function(event){		
@@ -35,9 +32,10 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				});
 			});
 		</script>
+
 </head>
 <body>
- <!-- header-section-starts -->
+ <!--头部开始-->
     <div class="header">
 		<div class="header-banner">
 			<div class="container">
@@ -45,8 +43,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				    <span class="menu"> </span>
 					    <ul class="navul">
 							<li><a href="#ABOUT" class="scroll">关于我</a></li>
-							<li><a href="#WORK" class="scroll">我的作品</a></li>
-							<li><a href="#BLOG" class="scroll">作品链接</a></li>
+							<li><a href="#WORK" class="scroll">WEB作品</a></li>
+							<li><a href="#BLOG" class="scroll">UI作品</a></li>
 							<li><a href="#CONTACT" class="scroll">联系方式</a></li>
 							<!-- <div class="clearfix"></div> -->
 						</ul>
@@ -54,36 +52,30 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		 <!--script-nav-->
 		 <script>
 		 $("span.menu").click(function(){
-		 $(".top-menu ul").slideToggle("slow" , function(){
-		 });
+		    $(".top-menu ul").slideToggle("slow" , function(){
+		    });
 		 });
 		 </script>
 				<div class="header-banner-info text-center">
-					<a href="#"><img src="./images/logo.png" alt="" /></a>
-					<h3>你好</h3>
+					<div class="col-md-4 about-section-grid-2 text-center">
+						<img src="./images/man.jpg" class="img-responsive" alt="" /> 
+					</div>
 					<h1>我的名字叫 <span>乔凡</span> </h1>
 					<p>我是一名前端工程师，欢迎来到我的主页。</p>
-					<span class="line"></span>					 
+					<p>My name is Joe,I am a front end engineer,welcome to my home page</p>					 
 					<ul class="social-icons">
 						<li><a href="#"><i class="twitter"></i></a></li>
 						<li><a href="#"><i class="dribble"></i></a></li>
 						<li><a href="#"><i class="behance"></i></a></li>
 					</ul>
-					<label></label>
-					<ul class="details">
-						<li>年龄     :     <a href="#">23</a></li>
-						<li>性别     :     <a href="#">男</a></li>
-						<li>联系电话     :     <a href="#">13466853828</a></li>
-						
-					</ul>
 				</div>
 			</div>
 		</div>
 	</div>
-    <!-- header-section-ends -->
-    <!-- content-section-starts -->
+    <!-- 头部结束 -->
+    <!-- 内容开始 -->
     <div class="content-section">
-	    <!-- about-section-starts -->
+	    <!-- 关于我页面开始 -->
 		<div class="about-section" id="ABOUT">
 			<div class="container">
 				<div class="about-section-head text-center">
@@ -104,8 +96,12 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						    <li><a href="#"><i class="behance"></i></a></li>
 					    </ul>
 					</div>
-					<div class="col-md-4 about-section-grid-2 text-center">
-						<img src="./images/man.jpg" class="img-responsive" alt="" /> 
+					<div class="col-md-4 about-section-grid-1">
+						<h4>工作经历</h4>
+						<p>&nbsp;&nbsp;&nbsp;&nbsp;我的家乡在山西太原，毕业后就职于太原电视台网络部，主要负责网站的页面布局动效的修改。同时在外跟随团队完成过上线项目。</p>
+						<br>
+						<h4>联系方式</h4>
+						<div class="tel"><span></span><p>13466853828</p></div>
 					</div>
 					<div class="col-md-4 about-section-grid-3">
 						<h4>我的技能</h4>
@@ -131,6 +127,18 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							   </span>
 							</div>
 							<div class="meter">
+								<span style="width:90%;"><div class="progress_desc">fullPage</div>
+								 <div class="percent">90%</div> 
+								 <div class="clearfix"> </div>
+							    </span>
+							</div>
+							<div class="meter">
+								<span style="width:80%;"><div class="progress_desc">AJAX/angularjs</div>
+								 <div class="percent">80%</div> 
+								 <div class="clearfix"> </div>
+							    </span>
+							</div>
+							<div class="meter">
 								<span style="width:55%;"><div class="progress_desc">PHPCMS</div>
 								 <div class="percent">55%</div> 
 								 <div class="clearfix"> </div>
@@ -154,7 +162,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 							    </span>
 							</div>
 						</div>
-					  </div>
+					</div>				
 					<div class="clearfix"></div>
 				</div>
 			</div>
@@ -165,52 +173,34 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			<div class="portfolio-section-top-row">
 				<div class="container">
 					<div class="portfolio-section-head text-center">
-						<h3>PORTFOLIO</h3>
+						<h3>WEB作品</h3>
 						<label></label>
-						<p>Do you want to know me?</p>
+						<p>WEB works</p>
 					</div>
 					<div class="col-md-4 portfolio-section-top-row-left-grid">
 						<div class="project-name">
-							<span>project-name</span>
-							<h3>ios 7 Weather App Design</h3>
+							<span>作品展示</span>
+							<h3>网站以及游戏</h3>
 						</div>
 						<div class="project-description">
-							 <span>project description</span>
-							 <ul>
-								<li><a href="#">Os 7 Design</a></li>
-								<li><a href="#">Weather App icons</a></li>
-								<li><a href="#">iPhone App Design</a></li>
-							 </ul>
-							 <p>Lorem ipsum dolor sit amet, consectetu et. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+							 <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;这里主要展示在工作和学习中模仿、设计的一些优秀的网站，有电商网站的布局、动效；响应式网站；以及页面游戏及应用。</p>
 						</div>
 						<div class="address">
-							<span>project web site or address</span>
-							<a href="">http://www.uipixels.com/</a>
+							<span>作品链接</span>
+							<p>Apple首页：<a href="http://yoo-hello.github.io/apple" target="blank">http://yoo-hello.github.io/apple</a></p>
+							<p>1号店：<a href="http://yoo-hello.github.io/1haodian" target="blank">http://yoo-hello.github.io/1haodian</a></p>
+							<p>优站精选：<a href="http://yoo-hello.github.io/youzhan" target="blank">http://yoo-hello.github.io/youzhan</a></p>
+							<p>fullPage启维：<a href="http://yoo-hello.github.io/kibey" target="blank">http://yoo-hello.github.io/kibey</a></p>
 						</div>
-						<div class="tags">
-							<span>tags</span>
-							<p>iPhone,iOs 7,Weather,App,Design,apple</p>
-						</div>
+						
 					</div>
 					<div class="col-md-8 portfolio-section-top-row-right-grid">
-		<div class="wmuSlider example1 section" id="section-1">
-			   <article style="position: absolute; width: 100%; opacity: 0;"> 
-					<img src="./images/img1.jpg" class="img-responsive" alt="">
-				</article>
-				<article style="position: absolute; width: 100%; opacity: 0;"> 
-`					<img src="./images/img2.jpg" class="img-responsive" alt="">
-				</article>
-				<article style="position: absolute; width: 100%; opacity: 0;"> 
-					<img src="./images/img3.jpg" class="img-responsive" alt="">
-				</article>
-				<ul class="wmuSliderPagination">
-                	<li><a href="#" class="">0</a></li>
-                	<li><a href="#" class="">1</a></li>
-                	<li><a href="#" class="">2</a></li>
-                </ul>
-
-		  </div>
-			  
+					    <div class="banner-box">
+						    <div class="banner banner-1"></div>
+						    <div class="banner banner-2"></div>
+						    <div class="banner banner-3"></div>
+						    <div class="banner banner-4"></div>
+					    </div>
 			  <!-- script -->
 			  <script src="./js/jquery.wmuSlider.js"></script> 
 				<script>
@@ -446,9 +436,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 						<span>24 OCT 2013 in<a href="#">FREE PSDS</a> - 2 Comments</span>
 						<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi felis nunc, vulputate vel mi quis, pulvinar porttitor sem. Vivamus posuere condimentum posuere. Sed vel lacus eros. Praesent euismod tortor libero, quis bibendum diam ultricies ac.</p>
 						<p>Suspendisse bibendum auctor mi. Nam suscipit dui ut ligula aliquet, sed posuere ligula fermentum. Duis vel metus velit. <label> Maecenas pellentesque, </label> lorem non condimentum egestas, lorem lorem elementum quam, a consequat purus neque et ipsum. Donec eu dignissim magna. Pellentesque a placerat urna, at semper nibh. Cras venenatis quam placerat eros ullamcorper, dignissim varius purus malesuada. </p>
-						<div class="blog-section-tags">
-							<p><span>TAGS </span> :  free, psd, megi, themes</p>
-						</div>
 					</div>
 					<div class="comments-section">
 						<h4>3 COMMENTS</h4>
@@ -673,4 +660,5 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 				<a href="#" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
 
 </body>
+<script src="js/index.js"></script>
 </html>
