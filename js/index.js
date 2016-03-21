@@ -10,5 +10,5 @@ $(function(){
 		});
 		$('.banner:first').next().animate({left:0})
 	}
-	var move=setInterval(times,5000);
+	var move=setInterval(times,1000);
 })

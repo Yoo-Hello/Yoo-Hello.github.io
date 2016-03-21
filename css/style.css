@@ -221,12 +221,38 @@ i.behance:hover{
     height: 0;
     clear: both;
 }
+.about-section-grids .tel{
+	margin-bottom: 20px;
+}
 .about-section-grids .tel span{
 	display: block;
-	width: 40px;
-	height: 40px;
-	background: yellow;
+	width: 65px;
+	height: 65px;
 	float: left;
+	background-image: url(../images/img-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -96px -75px;
+}
+.about-section-grids .tel p{
+	margin-bottom: 0;
+	margin-left: 80px;
+	font-size: 20px;
+	line-height: 65px;
+}
+.about-section-grids .mail span{
+	display: block;
+	width: 65px;
+	height: 65px;
+	float: left;
+	background-image: url(../images/img-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -8px -76px;
+}
+.about-section-grids .mail p{
+	margin-bottom: 0;
+	margin-left: 80px;
+	font-size: 20px;
+	line-height: 65px;
 }
 .about-section-grid-2.text-center img {
 	border-radius: 50%;
@@ -550,7 +576,22 @@ ul.wmuSliderPagination {
 	background-size: 100%;
 }
 .banner-4{
-	background-image: url(../images/kibey.png);
+	background-image: url(../images/kebey.jpg);
+	background-repeat:no-repeat; 
+	background-size: 100%;
+}
+.banner-5{
+	background-image: url(../images/chuizi.jpg);
+	background-repeat:no-repeat; 
+	background-size: 100%;
+}
+.banner-6{
+	background-image: url(../images/tianmao.jpg);
+	background-repeat:no-repeat; 
+	background-size: 100%;
+}
+.banner-7{
+	background-image: url(../images/xiaomi.jpg);
 	background-repeat:no-repeat; 
 	background-size: 100%;
 }
