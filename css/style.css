@@ -465,14 +465,7 @@ i.behance:hover{
 	border-bottom:1px solid #eee;
 	margin: 15px 0 0 0;
 }
-.address p{
-	color:#eee;
-	margin: 0 0 1.5em 3em;
-}
-.address a{
-	color:#eee;
-	display: inline-block;
-}
+
 .tags span{
 	color: #eee;
 	font-weight: 300;
@@ -543,11 +536,12 @@ ul.wmuSliderPagination {
 }
 .portfolio-section-top-row-right-grid {
 	padding-right: 0;
-	padding-left: 70px;
-	height: 390px;
+	padding-left: 0px;
+	height: 498px;
+	width: 100%;
 }
 .banner-box{
-	width: 90%;
+	width: 70%;
 	height: 100%;
 	margin: 0 auto;
 	overflow: hidden;
@@ -595,8 +589,57 @@ ul.wmuSliderPagination {
 	background-repeat:no-repeat; 
 	background-size: 100%;
 }
-.address a:hover{
-	color:#615474;
+.banner p{
+	color:#eee;
+	width: 100%;
+	height: 0px;
+	line-height: 50px;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	font-size: 20px;
+	text-align: center;
+	transition: height 0.5s ease;
+}
+.banner a{
+	color:#eee;
+	display: inline-block;
+	font: 0/0 a;
+	width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.banner:hover p{
+	height: 50px;
+}
+.Lanniu{
+	width: 38px;
+	height:38px;
+	background:rgba(0,0,0,0.5);
+	position: absolute;
+	left:16%;
+	top: 50%;
+	margin-top: -19px;
+	background-image: url(../images/img-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -190px -86px;
+	border-radius: 50%;
+}
+.Ranniu{
+	width: 38px;
+	height:38px;
+	background:rgba(0,0,0,0.5);
+	position: absolute;
+	right:16%;
+	top: 50%;
+	margin-top: -19px;
+	background-image: url(../images/img-sprite.png);
+	background-repeat: no-repeat;
+	background-position: -240px -86px;
+	border-radius: 50%;
 }
 /*	Strip
 /*-----------------------------------------------------------------------------------*/
@@ -604,7 +647,6 @@ ul.wmuSliderPagination {
 	position:relative;
 	display:inline-block;
 	vertical-align:top;
-	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	overflow:hidden;
 }
@@ -647,7 +689,7 @@ ul.wmuSliderPagination {
 	color: #FFD670;
 }
 .b-animate img{
-	margin-top:18%;
+	margin-left: 15px;
 	display: -webkit-inline-box;
 }
 /* lt-ie9 */
@@ -659,7 +701,10 @@ ul.wmuSliderPagination {
 	left:-100%;
 }
 .b-animate-go:hover .b-from-left{
+	color: #fff;
+	font-size: 25px;
 	left:0;
+	text-shadow: 5px 5px 5px #000;
 }
 #portfoliolist .portfolio {
 	-webkit-box-sizing: border-box;
@@ -1432,6 +1477,11 @@ i.in{
 		top: 157px;
 	}
 } 
+@media screen and (max-width:1180px){
+	.portfolio-section-top-row-right-grid{
+		height: 412px;
+	}
+}
 @media screen and (max-width:1024px){
 	
 	.header-banner-info h3 {
@@ -1521,6 +1571,7 @@ i.in{
 	}
 	.portfolio-section-top-row-right-grid {
 		padding: 0;
+		height: 302px;
 	}
 	.percent {
 		margin: 3px 10px 0;
