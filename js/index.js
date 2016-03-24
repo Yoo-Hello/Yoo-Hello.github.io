@@ -35,4 +35,16 @@ $(function(){
 	$('.Ranniu').click(function(){
 		nexts();
 	})
+
+	var iconLB=function(){
+		var w=$('.icondesign').width();
+		$('.icondesign:first').animate({left:-w},20000,'linear',function(){
+			$(this).css('left','50%')
+			.parent('.iconbox')
+			.append($(this));
+		})
+		$('.icondesign:first').next().animate({left:0},20000,'linear');
+	}
+	iconLB();
+	setInterval(iconLB,20050)
 })
