@@ -16,11 +16,6 @@ html{
   url('../iconfont/iconfont.ttf') format('truetype'),
   url('../iconfont/iconfont.svg#iconfont') format('svg');
 }
-@font-face{
-	font-family: Microsoft-YaHeiUi;
-	src:url("font-face/msyhl.ttf");
-	font-weight: lighter;
-}
 img{
 	border:none;
 }
@@ -29,7 +24,7 @@ a{
 }
 body{
 	overflow: hidden;
-	font-family: 'Microsoft-YaHeiUi','Lantinghei SC','Microsoft YaHei';
+	font-family: 'Lantinghei SC','Microsoft YaHei';
 	font-weight: lighter;
 }
 .iconfont{
