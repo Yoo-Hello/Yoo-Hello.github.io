@@ -12,6 +12,7 @@ $(function(){
 					'left':'10%',
 					'marginTop':'0',
 					'marginLeft':'0'
+
 				},600).find('p').animate({
 					'width':'12px',
 					'fontSize':'12px',
