@@ -56,10 +56,10 @@ $(function(){
 	
 	/*上下居中*/
 	$.fn.center = function(){
-		this.each(function(){
-			var Mtop = "-"+$(this).height()/2+"px";
-			$(this).css({'marginTop': Mtop});
-		})
+		for(var i=0;i<this.length;i++){
+			var Mtop = "-"+$(this[i]).height()/2+"px";
+			$(this[i]).css({'marginTop': Mtop});
+		}
 	}
 	// page4翻页
 	$.fn.switchPage = function(){
