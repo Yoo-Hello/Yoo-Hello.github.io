@@ -13,7 +13,7 @@ $(function(){
 					'marginTop':'0',
 					'marginLeft':'0'
 				},600).find('p').animate({
-					'width':'20px',
+					'width':'12px',
 					'fontSize':'12px',
 					'padding':'5px'
 				},600);
