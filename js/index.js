@@ -4,6 +4,11 @@ $(function(){
 		anchors:["page1","page2","page3","page4","page5"],
 		onLeave:function(index,nextindex,direction){
 			NavStyle(index-1,nextindex-1);
+			if(index !== 1 && nextindex !== 1){
+				$('.MyLogo').animate({
+					'opacity':'0'
+				},200)
+			}
 			if(nextindex !== 1){
 				$('.MyLogo').animate({
 					'width':'60px',
@@ -12,7 +17,6 @@ $(function(){
 					'left':'10%',
 					'marginTop':'0',
 					'marginLeft':'0'
-
 				},600).find('p').animate({
 					'width':'12px',
 					'fontSize':'12px',
@@ -38,6 +42,9 @@ $(function(){
 				$('.content').animate({
 					'opacity':'0'
 				},700)
+				$('.MyLogo').animate({
+					'opacity':'1'
+				})
 			}else if(index == 1){
 				$('.content').animate({
 					'opacity':'1'

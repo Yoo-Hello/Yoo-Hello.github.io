@@ -1,3 +1,11 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../iconfont/iconfont.eot');
+  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../iconfont/iconfont.woff') format('woff'),
+  url('../iconfont/iconfont.ttf') format('truetype'),
+  url('../iconfont/iconfont.svg#iconfont') format('svg');
+}
 *{
 	margin:0;
 	padding:0;
@@ -8,23 +16,16 @@ html{
 	width: 100%;
 	overflow-x: none;
 }
-@font-face {
-  font-family: 'iconfont';
-  src: url('../iconfont/iconfont.eot');
-  src: url('../iconfont/iconfont.eot?#iefix') format('embedded-opentype'),
-  url('../iconfont/iconfont.woff') format('woff'),
-  url('../iconfont/iconfont.ttf') format('truetype'),
-  url('../iconfont/iconfont.svg#iconfont') format('svg');
-}
 img{
 	border:none;
+	display: block;
 }
 a{
 	text-decoration: none;
 }
 body{
 	overflow: hidden;
-	font-family: 'Arial','Lantinghei SC','Microsoft YaHei';
+	font-family: 'Microsoft YaHei';
 	font-weight: lighter;
 }
 .iconfont{
@@ -58,7 +59,6 @@ body{
 	line-height: 100px;
 	text-align: center;
 	float: left;
-	/*background-color: rgba(0,0,0,0.3);*/
 }
 #head_box ul li span{
 	position: absolute;
@@ -66,9 +66,6 @@ body{
 	height:100%;
 	display: inline-block;
 	opacity: 0;
-}
-#head_box ul li #focus{
-	opacity: 1;
 }
 #head_box ul li a{
 	color:#000;
@@ -108,14 +105,12 @@ body{
 	right:0;
 	padding: 10px;
 }
-.content{
-	opacity: 0;
-}
 #fullpage{
 	z-index: 50;
 }
 #section1 .content{
 	width: 100%;
+	opacity: 0;
 }
 #section1 .content .blank{
 	width:180px;
@@ -186,21 +181,21 @@ body{
 	position: relative;
 	top:25%;
 }
-#section2 .contents .text h1,#section3 .contents .text h1{
+#section2 .contents .text h1{
 	font-size: 26px;
 	color:#333;
 	font-weight: 200;
 	margin-bottom: 50px;
 
 }
-#section2 .contents .text h1 i,#section3 .contents .text h1 i{
+#section2 .contents .text h1 i{
 	display: block;
 	width:50px;
 	height: 2px;
 	background: #000;
 	margin-top: 15px;
 }
-#section2 .contents .text p,#section3 .contents .text p{
+#section2 .contents .text p{
 	margin:5px 0;
 	font-size: 14px;
 	color:#000;
@@ -226,6 +221,61 @@ body{
 	border-radius: 50%;
 	background-image: url("../img/sts.jpg");
 	background-size: contain;
+}
+#section3 .contents .text div{
+	float: left;
+	width: 50%;
+}
+#section3 .contents .text .texts h1{
+	width: 100%;
+	font-size: 26px;
+	font-weight: 200;
+	margin-bottom: 50px;
+	text-align: center;
+}
+#section3 .contents .text .texts h1 i{
+	width:10%;
+	border-top:2px solid #333;
+	margin: 10px auto;
+	display: block;
+}
+#section3 .contents .text .texts p{
+	width: 100%;
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 5px;
+	letter-spacing: 2px;
+}
+#section4 .contents .title{
+	position: absolute;
+	display: inline-block;
+	width: 230px;
+	height: 35px;
+	left:50%;
+	top: 15%;
+	margin-left: -115px;
+}
+#section4 .contents .title h1{
+	text-align: center;
+	font-size: 26px;
+	font-weight: 400;
+	display: inline-block;
+	position: absolute;
+}
+#section4 .contents .title #myworks{
+	left: 0;
+	top: 0;
+}
+#section4 .contents .title #office{
+	right: 0;
+	bottom: 0;
+}
+#section4 .contents .title i{
+	display: inline-block;
+	font-size: 28px;
+	position: absolute;
+	left:50%;
+	margin-left: -6px;
 }
 #section4 .contents .works_box{
 	position: relative;

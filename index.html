@@ -14,7 +14,12 @@
 	<script type="text/javascript" src="js/jquery1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullPage.js"></script>
 	<script type="text/javascript" src="js/jquery.easings.min.js"></script>
-	<script type="text/javascript" src="js/index.js"></script>
+	<!-- 推荐一款非常好的在线字体网站，优字库在线字体 http://www.youziku.com-->
+	<script type="text/javascript" src="http://cdn.webfont.youziku.com/wwwroot/js/wf/youziku.api.min.js"></script>
+	<script type="text/javascript">
+	   $youziku.load("body", "8e244aae96d64be7bc86775130400d07", "SiYuan-ExtraLight");
+	   $youziku.draw();
+	</script>
 </head>
 <body>
 	<header>
@@ -86,20 +91,27 @@
 		<div class="section" id="section3">
 			<div class="contents">
 				<div class="text">
-					<h1>工作经历<i></i></h1>
-					<p>2015年毕业后，在家人的支持下去了上海锻炼</p>
-					<p>2015年7月，在华易租科技公司实习</p>
-					<p>2016年4月，我到了一家新公司，51汽车</p>
-					<p>公司主要项目是二手车交易网站</p>
-					<p>我负责客户的专题、活动、广告页面等</p>
-					<p>也参与了公司移动客户端的页面编写</p>
-					<p></p>
-					<span class="text_img"></span>
+					<div class="images">
+						<img src="./img/bgs.jpg">
+					</div>
+					<div class="texts">
+						<h1><i></i>工作经历<i></i></h1>
+						<p>2015年毕业后，在家人的支持下去了上海锻炼</p>
+						<p>2015年7月，在华易租科技公司实习</p>
+						<p>2016年4月，我到了一家新公司，51汽车</p>
+						<p>公司主要项目是二手车交易网站</p>
+						<p>我负责客户的专题、活动、广告页面等</p>
+						<p>也参与了公司移动客户端的页面编写</p>
+						<p></p>
+					</div>
 				</div>
 			</div>
 		</div>
 		<div class="section" id="section4">
 			<div class="contents">
+				<div class="title">
+					<h1 id="myworks">个人作品</h1><i>/</i><h1 id="office">工作项目</h1>
+				</div>
 				<div class="works_box">
 					<div class="works"  style="display: block;opacity: 1">
 						<ul>
@@ -168,6 +180,6 @@
 	</div> -->
 	
 </body>
-	
+	<script type="text/javascript" src="js/index.js"></script>
 	
 </html>
