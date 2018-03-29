@@ -13,10 +13,11 @@ $(function(){
 				$('.MyLogo').animate({
 					'width':'60px',
 					'height':'90px',
-					'top':'7%',
+					'top':'6%',
 					'left':'10%',
 					'marginTop':'0',
-					'marginLeft':'0'
+					'marginLeft':'0',
+					'borderWidth':'3px'
 				},600).find('p').animate({
 					'width':'12px',
 					'fontSize':'12px',
@@ -28,12 +29,13 @@ $(function(){
 					'height':'270px',
 					'top':'50%',
 					'left':'50%',
-					'marginTop':'-185px',
-					'marginLeft':'-90px'
+					'marginTop':'-186px',
+					'marginLeft':'-96px',
+					'borderWidth':'6px'
 				},600).find('p').animate({
 					'width':'30px',
 					'fontSize':'30px',
-					'padding':'10px'
+					'padding':'15px'
 				},600);
 			}
 		},
@@ -44,7 +46,7 @@ $(function(){
 				},700)
 				$('.MyLogo').animate({
 					'opacity':'1'
-				})
+				},300)
 			}else if(index == 1){
 				$('.content').animate({
 					'opacity':'1'
@@ -59,6 +61,31 @@ $(function(){
 		var n=$('.nav').eq(nextindex);
 		i.children("a").children("i").css({"color":"#ccc"})
 		n.children("a").children("i").css({"color":"#333"});
+	}
+	/*媒体ICON样式*/
+	$.fn.social = function(){
+		for(var i=0;i<this.length;i++){
+			$(this[i]).on('mousemove',function(){
+				$(this).find('i').css({
+					'color':'#333'
+				});
+			});
+			$(this[i]).on('mouseout',function(){
+				$(this).find('i').css({
+					'color':'#999'
+				});
+			})
+		}
+		$('.weixin').on('mousemove',function(){
+			$('.imgbox').css({
+				'display':'block'
+			})
+		});
+		$('.weixin').on('mouseout',function(){
+			$('.imgbox').css({
+				'display':'none'
+			})
+		})
 	}
 	
 	/*上下居中*/
@@ -114,8 +141,9 @@ $(function(){
 	}
 	// 页面功能
 	function pageFun(){
-		var SwitchPageObj = $('.works').switchPage();
-		var LftLi = $('.works ul li').center();
+		$('.works').switchPage();
+		$('.works ul li').center();
+		$('.social ul li a').social();
 	}
 	pageFun();
 })
