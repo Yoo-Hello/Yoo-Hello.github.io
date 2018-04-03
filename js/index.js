@@ -87,7 +87,6 @@ $(function(){
 			})
 		})
 	}
-	
 	/*上下居中*/
 	$.fn.center = function(){
 		for(var i=0;i<this.length;i++){
@@ -99,46 +98,84 @@ $(function(){
 	$.fn.switchPage = function(){
 		var obj = this;
 		var thisindex = 0;
-		var switchPageAnimate = function(direction,obj){
-			var animations = function(nextId){
-				$(obj[thisindex]).find('li').first().animate({
-					'left':'-50px'
-				}).next().animate({
-					'right':'-50px'
-				}).parents('.works').animate({
-					'opacity':'0'
-				},function(){
-					$(this).css({
-						'display':'none'
-					}).find('li').first().css({
-						'left':'0'
-					}).next().css({
-						'right':'0'
-					})
-					$(obj[nextId]).css({
-						'display':'block'
-					}).animate({
-						'opacity':'1'
-					});
-					$('.works ul li').center();
+		var navbtnStyle = function(Index){
+			var obj = $('.navbtn ul li span')
+			console.log($(obj[Index]))
+			$(obj).css({
+				'width':'8px',
+				'height':'8px',
+				'background':'#999'
+			})
+			$(obj[Index]).css({
+				'width':'10px',
+				'height':'10px',
+				'background':'#333'
+			})
+		}
+		var animations = function(nextId){
+			$(obj[thisindex]).find('li').first().animate({
+				'left':'-100px'
+			}).next().animate({
+				'right':'-100px'
+			}).parents('.works').animate({
+				'opacity':'0'
+			},function(){
+				$(this).css({
+					'display':'none'
+				}).find('li').first().css({
+					'left':'0'
+				}).next().css({
+					'right':'0'
 				})
+				$(obj[nextId]).css({
+					'display':'block'
+				}).animate({
+					'opacity':'1'
+				},800);
+				$('.works ul li').center();
+			})
+		}
+		var navbtn = function(){
+			var pageLength = $('.works').length;
+			var btn = '<li><span></span></li>'
+			for(var i=0;i<pageLength;i++){
+				$('.navbtn ul').append(btn);
 			}
-			if(direction == 'left' && thisindex > 0){
-				animations(thisindex-1);
-				thisindex--;
-			}
-			if(direction == 'right' && thisindex < obj.length-1){
-				animations(thisindex+1);
-				thisindex++;
-			}
+			$('.navbtn ul li').css({
+				'width':100/pageLength+'%'
+			})
+			$('.navbtn ul li span').each(function(i){
+				$(this).on('click',function(){
+					navbtnStyle(i);
+					animations(i);
+					thisindex = i;
+				})
+			})
+			$('.navbtn ul li span').eq(0).css({
+				'width':'10px',
+				'height':'10px',
+				'background':'#333'
+			})
 		}
 		$('#Lbtn').on('click',function(){
-			switchPageAnimate('left',obj);
+			if(thisindex > 0){
+				animations(thisindex-1);
+				navbtnStyle(thisindex-1);
+				thisindex--;
+			}
 		});
 		$('#Rbtn').on('click',function(){
-			switchPageAnimate('right',obj);
+			if(thisindex < obj.length-1){
+				animations(thisindex+1);
+				navbtnStyle(thisindex+1);
+				thisindex++;
+			}
 		});
+		
+		navbtn();
 	}
+	// page4导航按钮
+	
 	// 页面功能
 	function pageFun(){
 		$('.works').switchPage();

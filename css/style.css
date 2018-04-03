@@ -321,6 +321,41 @@ body{
 	display: block;
 	margin:0 auto;
 }
+#section4 .contents .works_box .works ul li span{
+	display:block;
+	width: 120px;
+	height:120px;
+	margin: 0 auto;
+	background-image: url('../img/icon.png');
+	background-repeat: no-repeat;
+}
+#section4 .contents .works_box .works ul li .icloud{
+	background-position: 0px 0px;
+}
+#section4 .contents .works_box .works ul li .youzhan{
+	background-position: -125px 0px;
+}
+#section4 .contents .works_box .works ul li .iphone{
+	background-position: 0px -125px;
+}
+#section4 .contents .works_box .works ul li .qiwei{
+	background-position: -125px -125px;
+}
+#section4 .contents .works_box .works ul li .tianmao{
+	background-position: 0px -250px;
+}
+#section4 .contents .works_box .works ul li .chuizi{
+	background-position: -125px -250px;
+}
+#section4 .contents .works_box .works ul li .saolei{
+	background-position: 0px -375px;
+}
+#section4 .contents .works_box .works ul li .tcs{
+	background-position: -125px -375px;
+}
+#section4 .contents .works_box .works ul li .xsn{
+	background-position: -0px -500px;
+}
 #section4 .contents .works_box .btn{
 	width: 80px;
 	height:100px;
@@ -328,6 +363,7 @@ body{
 	top: 50%;
 	left:50%;
 	margin-top:-50px;
+	z-index: 99;
 }
 #section4 .contents .works_box .btn i{
 	moz-user-select: -moz-none; 
@@ -351,6 +387,24 @@ body{
 }
 #section4 .contents .works_box #Rbtn{
 	margin-left:270px;
+}
+#section4 .contents .works_box .navbtn{
+	position: absolute;
+	bottom: -100px;
+	width: 100%;
+	z-index: 99;
+}
+#section4 .contents .works_box .navbtn ul li{
+	display: inline-block;
+}
+#section4 .contents .works_box .navbtn ul li span{
+	display: block;
+	width:8px;
+	height:8px;
+	background: #999;
+	border-radius: 50%;
+	margin:0 auto;
+	cursor: pointer;
 }
 #section5 .contents .text{
 	width:960px;
