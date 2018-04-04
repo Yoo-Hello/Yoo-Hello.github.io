@@ -509,3 +509,13 @@ body{
 	border-right: 10px solid transparent;
 	border-top: 10px solid #fff;
 }
+#section5 .contents .statement{
+	position: absolute;
+	bottom: 0;
+	width: 100%
+}
+#section5 .contents .statement p{
+	color:#999;
+	font-size: 12px;
+	text-align: center;
+}
