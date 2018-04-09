@@ -251,34 +251,23 @@ body{
 #section4 .contents .title{
 	position: absolute;
 	display: inline-block;
-	width: 230px;
+	width: 150px;
 	height: 35px;
 	left:50%;
 	top: 15%;
-	margin-left: -115px;
+	margin-left: -75px;
 }
 #section4 .contents .title h1{
 	text-align: center;
 	font-size: 26px;
 	font-weight: 400;
-	display: inline-block;
-	position: absolute;
-}
-#section4 .contents .title #myworks{
-	left: 0;
-	top: 0;
-}
-#section4 .contents .title #office{
-	right: 0;
-	bottom: 0;
+	text-align: center;
 }
 #section4 .contents .title i{
-	display: inline-block;
-	font-size: 28px;
-	font-weight: 600;
-	position: absolute;
-	left:50%;
-	margin-left: -6px;
+	width: 70%;
+	display: block;
+	border-bottom: 1px solid #333;
+	margin:15px auto 0;
 }
 #section4 .contents .works_box{
 	position: relative;
